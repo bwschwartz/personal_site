@@ -597,6 +597,12 @@ input, select, textarea {
 					/* width: 330px; */
 				}
 
+				#main .item.span-4:hover {
+					text-decoration:underline;
+					cursor: pointer;
+				}
+
+
 		}
 
 		@media screen and (max-width: 736px) {
@@ -683,9 +689,8 @@ input, select, textarea {
 		z-index: 10002;
 	}
 
-#myBtn4 {
-	width: 10px;
-}
+
+
 
 		#footer > section:first-child {
 			text-align: left;
