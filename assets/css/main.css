@@ -132,6 +132,9 @@ input, select, textarea {
 				background-repeat: repeat, no-repeat, no-repeat;
 				background-position: top left, bottom left, 50% 0%;
 			}
+			/* .modal-content {
+				width: 100%;
+			} */
 
 
 		}
@@ -337,10 +340,10 @@ input, select, textarea {
 		position: fixed;
 		width: 6rem;
 		height: 100vh;
-		cursor: -moz-grab;
+		/* cursor: -moz-grab;
 		cursor: -webkit-grab;
-		cursor: -ms-grab;
-		cursor: grab;
+		cursor: -ms-grab; */
+		/* cursor: grab; */
 		z-index: 10001;
 	}
 
@@ -389,11 +392,12 @@ input, select, textarea {
 			display: -webkit-flex;
 			display: -ms-flex;
 			display: flex;
+			cursor: default;
 		}
 
-			#main .items > :last-child {
-				border-right: solid 10px #ffffff;
-			}
+		#main .items > :last-child {
+			border-right: solid 10px #ffffff;
+		}
 
 		#main .item {
 			-moz-flex-grow: 0;
@@ -407,6 +411,7 @@ input, select, textarea {
 			margin: 5px;
 			height: 16em;
 			box-shadow: 0 0 0 10px #ffffff;
+
 		}
 
 			#main .item.span-1 {
@@ -414,6 +419,19 @@ input, select, textarea {
 			}
 
 			#main .item.span-1:hover {
+				cursor: pointer;
+				/* text-decoration: underline; */
+			}
+
+			#main .item.span-2:hover {
+				cursor: pointer;
+			}
+
+			#main .item.span-3:hover {
+				cursor: pointer;
+			}
+
+			#main .item.span-4:hover {
 				cursor: pointer;
 				text-decoration: underline;
 			}
@@ -459,6 +477,7 @@ input, select, textarea {
 				#main .item.intro h1 {
 					font-size: 3em;
 					line-height: 1em;
+					cursor: default;
 				}
 
 				#main .item.intro p {
@@ -489,6 +508,7 @@ input, select, textarea {
 
 				#main .item.thumb:hover h2 {
 					text-decoration:underline;
+					cursor:pointer;
 
 				}
 
@@ -593,10 +613,10 @@ input, select, textarea {
 					/* width: 330px; */
 				}
 
-				#main .item.span-4:hover {
+				/* #main .item.span-4:hover {
 					text-decoration:underline;
 					cursor: pointer;
-				}
+				} */
 
 
 		}
