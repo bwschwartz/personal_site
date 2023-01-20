@@ -27,9 +27,31 @@ const btn5 = document.getElementById(`myBtn5`);
 
 btn0.onclick = function() {
 	modal0.style.display = "block";
-	// document.getElementById.style.opacity=.1;
-
 }
+
+let btn0Width;
+let btn0Height;
+
+// btn0.onmouseover = function(e) {
+// 	const el = document.getElementById('myBtn0');
+// 	btn0Width = el.getBoundingClientRect().width;
+// 	btn0Height = el.getBoundingClientRect().height;
+// console.log("button width is", btn0Width)
+// el.style.width =`${btn0Width +50}px`
+// el.style.height =`${btn0Height +50}px`
+// }
+
+// btn0.onmouseout = function(e) {
+// 	console.log("in mouse out", btn0Width)
+// document.getElementById('myBtn0').style.width =`${document.getElementById('myBtn0').getBoundingClientRect().width - 50}px`
+// document.getElementById('myBtn0').style.height =`${document.getElementById('myBtn0').getBoundingClientRect().height - 50}px`
+
+// }
+
+
+
+console.log("button width is", btn0Width)
+
 btn1.onclick = function() {
 	modal1.style.display = "block";
 }

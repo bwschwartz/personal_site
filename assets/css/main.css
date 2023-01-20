@@ -413,9 +413,26 @@ input, select, textarea {
 				width: 20em;
 			}
 
+			#main .item.span-1:hover {
+				width: 20em;
+				height: 18em;
+				margin-top: -10px;
+				z-index: 100;
+				cursor: pointer;
+
+			}
+
 			#main .item.span-2 {
 				width: 30em;
 			}
+
+			/* #main .item.span-2:hover {
+				width: 20em;
+				height: 18em;
+				margin-top: -10px;
+				z-index: 100;
+				cursor: pointer;
+			} */
 
 			#main .item.span-3 {
 				width: 40em;
@@ -560,6 +577,13 @@ input, select, textarea {
 					width: 17em;
 				}
 
+				#main .item.span-1:hover {
+					width: 20em;
+					height: 18em;
+					margin-top: -10px;
+					z-index: 100;
+				}
+
 				#main .item.span-2 {
 					width: 25.5em;
 				}
@@ -632,7 +656,6 @@ input, select, textarea {
 						display: none;
 					}
 
-
 		}
 
 		@media screen and (max-width: 480px) {
@@ -640,8 +663,6 @@ input, select, textarea {
 			#main .item {
 				height: 10em;
 			}
-
-
 
 		}
 
@@ -661,6 +682,10 @@ input, select, textarea {
 		position: relative;
 		z-index: 10002;
 	}
+
+#myBtn4 {
+	width: 10px;
+}
 
 		#footer > section:first-child {
 			text-align: left;
@@ -899,6 +924,8 @@ input, select, textarea {
   padding: 20px;
   border: 1px solid #888;
 	color: rgb(98, 207, 98);
+
+	color:rgba(255, 255, 255, 0.6);
   width: 50%; /* Could be more or less, depending on screen size */
 	font-size: 25px;
 	height: auto;
@@ -952,7 +979,7 @@ input, select, textarea {
 	width: 100%;
 	font-size: 30px;
 	line-height: 40px;
-	color: rgb(248, 227, 103);
+	color: #d64760;
 	/* margin-left: 500px; */
 }
 
