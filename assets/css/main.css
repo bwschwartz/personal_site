@@ -419,7 +419,6 @@ input, select, textarea {
 				margin-top: -10px;
 				z-index: 100;
 				cursor: pointer;
-
 			}
 
 			#main .item.span-2 {
@@ -577,12 +576,6 @@ input, select, textarea {
 					width: 17em;
 				}
 
-				#main .item.span-1:hover {
-					width: 20em;
-					height: 18em;
-					margin-top: -10px;
-					z-index: 100;
-				}
 
 				#main .item.span-2 {
 					width: 25.5em;
