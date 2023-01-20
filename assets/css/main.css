@@ -949,3 +949,9 @@ input, select, textarea {
 	margin-top: 25px;
 	text-align: center;
 }
+
+#bio-title {
+	text-align: center;
+	font-size: 40px;
+}
+
