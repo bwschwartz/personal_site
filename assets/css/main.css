@@ -115,6 +115,13 @@ input, select, textarea {
 				background-attachment: scroll;
 			}
 
+
+
+
+
+
+
+
 		}
 
 		@media screen and (max-width: 736px) {
@@ -125,6 +132,7 @@ input, select, textarea {
 				background-repeat: repeat, no-repeat, no-repeat;
 				background-position: top left, bottom left, 50% 0%;
 			}
+
 
 		}
 
@@ -142,6 +150,10 @@ input, select, textarea {
 				font-size: 11pt;
 			}
 
+			#main .item.span-4 {
+				width: 5209.5px;
+			}
+
 		}
 
 		@media screen and (max-width: 1280px) {
@@ -150,6 +162,9 @@ input, select, textarea {
 				font-size: 10pt;
 			}
 
+
+
+
 		}
 
 		@media screen and (max-width: 980px) {
@@ -157,6 +172,8 @@ input, select, textarea {
 			body, input, select, textarea {
 				font-size: 11pt;
 			}
+
+
 
 		}
 
@@ -225,6 +242,8 @@ input, select, textarea {
 			ul.icons {
 				margin: 0 0 2em 0;
 			}
+
+
 
 		}
 
@@ -309,6 +328,7 @@ input, select, textarea {
 				min-height: 0;
 			}
 
+
 		}
 
 /* Scroll Zone */
@@ -337,6 +357,7 @@ input, select, textarea {
 			.scrollZone {
 				display: none;
 			}
+
 
 		}
 
@@ -398,6 +419,10 @@ input, select, textarea {
 
 			#main .item.span-3 {
 				width: 40em;
+			}
+
+			#main .item.span-4 {
+				width: 509.5px;
 			}
 
 			#main .item.intro {
@@ -543,6 +568,11 @@ input, select, textarea {
 					width: 34em;
 				}
 
+				#main .item.span-4 {
+					width: 364px;
+					/* width: 330px; */
+				}
+
 		}
 
 		@media screen and (max-width: 736px) {
@@ -602,6 +632,7 @@ input, select, textarea {
 						display: none;
 					}
 
+
 		}
 
 		@media screen and (max-width: 480px) {
@@ -609,6 +640,8 @@ input, select, textarea {
 			#main .item {
 				height: 10em;
 			}
+
+
 
 		}
 
@@ -657,7 +690,13 @@ input, select, textarea {
 				border-left: 0;
 				margin-left: 0;
 				padding-left: 0;
+
 			}
+/*
+		.icons{
+			background-color: blue;
+			align-self: right;
+		} */
 
 		@media screen and (max-width: 980px) {
 
@@ -678,7 +717,6 @@ input, select, textarea {
 					margin: 1.5em 0 0 0;
 					width: 100%;
 				}
-
 		}
 
 		@media screen and (max-width: 736px) {
@@ -708,6 +746,7 @@ input, select, textarea {
 					#footer .copyright li:first-child {
 						margin-top: 0;
 					}
+
 
 		}
 
@@ -837,42 +876,76 @@ input, select, textarea {
 .modal {
   display: none; /* Hidden by default */
   position: fixed; /* Stay in place */
-  z-index: 10; /* Sit on top */
+  z-index: 100; /* Sit on top */
   left: 0;
   top: 0;
   width: 100%; /* Full width */
   height: 100%; /* Full height */
   overflow: auto; /* Enable scroll if needed */
   background-color: rgb(0,0,0); /* Fallback color */
-  background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+  background-color: rgba(0,0,0,0.9);
 }
 
 /* Modal Content/Box */
 .modal-content {
-  /* background-color: green; */
+  background-color: rgb(148, 148, 243);
   margin: 15% auto; /* 15% from the top and centered */
   padding: 20px;
   border: 1px solid #888;
-	color: green;
-  width: 80%; /* Could be more or less, depending on screen size */
+	color: rgb(40, 134, 40);
+  width: 50%; /* Could be more or less, depending on screen size */
+	font-size: 25px;
+	height: auto;
+	display: flex;
+	flex-direction: column;
 }
 
-/* The Close Button */
-.close {
-  color: #aaa;
-  float: right;
-  font-size: 28px;
-  font-weight: bold;
+#features-title {
+	font-weight: bold;
+	text-decoration: underline;
+	margin-bottom: 14px;
+
 }
 
-.close:hover,
-.close:focus {
-  color: black;
-  text-decoration: none;
-  cursor: pointer;
+#myBtn5 h1 {
+	text-align: right;
+	color: rgba(255, 255, 255, 0.6);
+	color: #ffffff;
+	color: #d64760;
+	font-size: 40px;
 }
 
-/*
-#myModal0{
-	background-color: blue;
-} */
+#myBtn5 {
+	background-color:rgba(255, 255, 255, 0.6);
+	width: 100%;
+	height: 100%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	color: #d64760;
+}
+
+#summary {
+	font-style: italic;
+	text-align: center;
+	/* background-color: blue; */
+	width: 100%;
+	font-size: 30px;
+	line-height: 40px;
+	color: gold;
+	/* margin-left: 500px; */
+}
+
+#features {
+	list-style:circle;
+	margin-left: 20px;
+}
+
+#features li:not(:last-child) {
+	margin-bottom: 15px;
+}
+
+#site-link{
+	margin-top: 25px;
+	text-align: center;
+}
