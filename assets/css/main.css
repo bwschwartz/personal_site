@@ -414,11 +414,8 @@ input, select, textarea {
 			}
 
 			#main .item.span-1:hover {
-				width: 20em;
-				height: 18em;
-				margin-top: -10px;
-				z-index: 100;
 				cursor: pointer;
+				text-decoration: underline;
 			}
 
 			#main .item.span-2 {
@@ -489,6 +486,12 @@ input, select, textarea {
 					line-height: 1em;
 					z-index: 2;
 				}
+
+				#main .item.thumb:hover h2 {
+					text-decoration:underline;
+
+				}
+
 
 				#main .item.thumb img {
 					display: block;
