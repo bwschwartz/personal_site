@@ -918,6 +918,7 @@ input, select, textarea {
   background-color: rgb(0,0,0); /* Fallback color */
   background-color: rgba(0,0,0,0.9);
 	animation: toBlack 5s;
+	cursor: default;
 }
 
 @keyframes toBlack {
@@ -940,6 +941,7 @@ input, select, textarea {
 	flex-direction: column;
 	box-shadow: 0px 0px 100px rgb(170, 64, 64);
 	animation: fadeIn 2s;
+	cursor: default;
 }
 
 @keyframes fadeIn {
@@ -953,14 +955,7 @@ input, select, textarea {
 	}
 }
 
-#features-title {
-	font-weight: bold;
-	text-decoration: underline;
-	margin-bottom: 14px;
-	color: #d64760;
 
-
-}
 
 #myBtn5 h1 {
 	text-align: right;
@@ -987,19 +982,33 @@ input, select, textarea {
 	width: 100%;
 	font-size: 30px;
 	line-height: 40px;
+	cursor: default;
 	/* color: #d64760; */
 	/* margin-left: 500px; */
 }
 
+#features-title {
+	font-weight: bold;
+	/* text-decoration: underline; */
+	margin-bottom: 14px;
+	color: #d64760;
+	font-family:Arial, Helvetica, sans-serif
+
+}
+
 #features {
-	list-style:circle;
+	list-style:disc;
 	margin-left: 20px;
 	color: #d64760;
-
+	font-family:Arial, Helvetica, sans-serif;
+	cursor: default;
+	/* font-size: 30px; */
 }
 
 #features li:not(:last-child) {
 	margin-bottom: 15px;
+	/* border: 1px solid gold; */
+
 }
 
 #site-link{
