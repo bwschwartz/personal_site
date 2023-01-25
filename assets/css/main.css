@@ -1002,8 +1002,9 @@ input, select, textarea {
 	color: #d64760;
 	font-family:Arial, Helvetica, sans-serif;
 	cursor: default;
-	/* font-size: 30px; */
+
 }
+
 
 #features li:not(:last-child) {
 	margin-bottom: 15px;
