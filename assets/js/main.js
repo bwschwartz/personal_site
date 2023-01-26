@@ -6,7 +6,6 @@
 
 (function($) {
 
-
 const modal0 = document.getElementById(`myModal0`);
 const btn0 = document.getElementById(`myBtn0`);
 
@@ -25,79 +24,236 @@ const btn4 = document.getElementById(`myBtn4`);
 const modal5 = document.getElementById(`myModal5`);
 const btn5 = document.getElementById(`myBtn5`);
 
-btn0.onclick = function() {
-	modal0.style.display = "block";
-}
 
 let btn0Width;
 let btn0Height;
+let typer1;
+let typer2;
+let typer3;
 
-// btn0.onmouseover = function(e) {
-// 	const el = document.getElementById('myBtn0');
-// 	btn0Width = el.getBoundingClientRect().width;
-// 	btn0Height = el.getBoundingClientRect().height;
-// console.log("button width is", btn0Width)
-// el.style.width =`${btn0Width +50}px`
-// el.style.height =`${btn0Height +50}px`
-// }
+let aText = new Array(
+	"Test",
+	"Me"
+	);
+let iSpeed = 50; // time delay of print out
+let iIndex = 0; // start printing array at this posision
+let iArrLength = aText[0].length; // the length of the text array
+let iScrollAt = 20; // start scrolling up at this many lines
 
-// btn0.onmouseout = function(e) {
-// 	console.log("in mouse out", btn0Width)
-// document.getElementById('myBtn0').style.width =`${document.getElementById('myBtn0').getBoundingClientRect().width - 50}px`
-// document.getElementById('myBtn0').style.height =`${document.getElementById('myBtn0').getBoundingClientRect().height - 50}px`
+let iTextPos = 0; // initialise text position
+let sContents = ''; // initialise contents variable
+let iRow; // initialise current row
 
-// }
-
-
-
-console.log("button width is", btn0Width)
-
-btn1.onclick = function() {
-	modal1.style.display = "block";
+const disableButtons = () => {
+	console.log("disabled")
+	for (let i=0;i<6; i++) {
+		eval('btn' + i).disabled = true
+	}
 }
+
+const enableButtons = () => {
+	console.log("im enabling")
+	for (let i=0;i<6; i++) {
+		eval('btn' + i).disabled = false
+	}
+}
+
+// adapted from: https://css-tricks.com/snippets/css/typewriter-effect/ by Geoff Graham
+const typewriter = (id) =>
+{
+ destination = document.getElementById(`${id}`);
+ destination.innerText=" "
+ sContents =  ' ';
+ iRow = Math.max(0, iIndex-iScrollAt);
+
+ while ( iRow < iIndex ) {
+	sContents += aText[iRow++] + '<br /> <br />';
+ }
+ if (aText[iIndex]) destination.innerHTML = sContents + aText[iIndex].substring(0, iTextPos) + "_";
+ if (aText[iIndex].substring(iTextPos-1, iTextPos) === "<" ) {
+
+}
+ if ( iTextPos++ == iArrLength ) {
+	iTextPos = 0;
+	iIndex++;
+	if ( aText[iIndex] && iIndex != aText.length ) {
+	 iArrLength = aText[iIndex].length;
+	 typer1= setTimeout(() => typewriter(`${id}`), 100);
+	} else {
+		destination.innerHTML = sContents + aText[iRow++]
+	}
+ } else {
+	typer2 = setTimeout(() => typewriter(`${id}`), iSpeed);
+ }
+}
+
+
+btn0.onclick = function() {
+	disableButtons()
+	destination = document.getElementById("typedtext0");
+	destination.innerText=" "
+	 aText = new Array(
+			"Instant messaging <b>WebSockets API</b>",
+			"Scalable image hosting <b>AWS 3</b>",
+			"Cohesive <b>CSS<b> transitions"
+			);
+			iSpeed = 50; // time delay of print out
+		iIndex = 0; // start printing array at this posision
+		iArrLength = aText[0].length; // the length of the text array
+		iScrollAt = 20; // start scrolling up at this many lines
+		iTextPos = 0; // initialise text position
+		sContents = ''; // initialise contents variable
+		let iRow; // initialise current row
+
+	typer3 = setTimeout(() => typewriter("typedtext0"), 1000); //start timer
+	setTimeout(() => enableButtons(), 1000);
+	modal0.style.display = "block";
+}
+
+
+btn1.onclick = function (e) {
+	disableButtons()
+	destination = document.getElementById("typedtext1");
+	destination.innerText=" "
+
+	 aText = new Array(
+		 "Search and focus <b>Office Javascript API</b>",
+		 "Single space detection",
+		 "Fun UI <b>React.js</b>",
+		);
+		iSpeed = 50; // time delay of print out
+		iIndex = 0; // start printing array at this posision
+		iArrLength = aText[0].length; // the length of the text array
+		iScrollAt = 20; // start scrolling up at this many lines
+		iTextPos = 0; // initialise text position
+		sContents = ''; // initialise contents variable
+		let iRow; // initialise current row
+
+	typer3 = setTimeout(() => typewriter("typedtext1"), 1000); //start timer
+	setTimeout(()=> enableButtons(), 1000)
+
+	modal1.style.display = "block";
+	}
+
+
 btn2.onclick = function() {
+	disableButtons()
+	destination = document.getElementById("typedtext2");
+	destination.innerText=" "
+	 aText = new Array(
+			"Drag and drop <b>jQuery UI</b> ",
+			"DSP <b>Web Audio API</b>",
+			"Dynamic modular routing",
+			"Boingy cables <b>Matter.js</b> physics engine"
+		);
+		iSpeed = 50; // time delay of print out
+		iIndex = 0; // start printing array at this posision
+		iArrLength = aText[0].length; // the length of the text array
+		iScrollAt = 20; // start scrolling up at this many lines
+		iTextPos = 0; // initialise text position
+		sContents = ''; // initialise contents variable
+		let iRow; // initialise current row
+
+	typer3 = setTimeout(() => typewriter("typedtext2"), 1000); //start timer
+	setTimeout(()=> enableButtons(), 1000)
+
 	modal2.style.display = "block";
 }
+
+
+
 btn3.onclick = function() {
+	disableButtons()
+	destination = document.getElementById("typedtext3");
+	destination.innerText=" "
+
+	 aText = new Array(
+			"Instant messaging <b>WebSockets API</b>",
+			"Channels",
+			"Resizable components",
+			"Scalable image hosting <b>AWS 3</b>"
+
+	);
+	iSpeed = 50; // time delay of print out
+	iIndex = 0; // start printing array at this posision
+	iArrLength = aText[0].length; // the length of the text array
+	iScrollAt = 20; // start scrolling up at this many lines
+	iTextPos = 0; // initialise text position
+	sContents = ''; // initialise contents variable
+	let iRow; // initialise current row
+
+	typer3 = setTimeout(() => typewriter("typedtext3"), 1000); //start timer
+	setTimeout(()=> enableButtons(), 1000)
+
 	modal3.style.display = "block";
 }
 
 btn4.onclick = function() {
+	disableButtons()
+	destination = document.getElementById("typedtext4");
+	destination.innerText=" "
+	 aText = new Array(
+			"New ASP + AI paradigm <b>DDSP</b>",
+			"Denoising autoencoder <b>TensorFlow</b>",
+			"> 250,000 steps <b>Greene supercomputer</b> ",
+			"Sick UI <b>Max/MSP</b>"
+		);
+		iSpeed = 50; // time delay of print out
+		iIndex = 0; // start printing array at this posision
+		iArrLength = aText[0].length; // the length of the text array
+		iScrollAt = 20; // start scrolling up at this many lines
+		iTextPos = 0; // initialise text position
+		sContents = ''; // initialise contents variable
+		let iRow; // initialise current row
+
+	typer3 = setTimeout(() => typewriter("typedtext4"), 1000); //start timer
+	setTimeout(()=> enableButtons(), 1000)
+
 	modal4.style.display = "block";
 }
 
 btn5.onclick = function() {
+
 	modal5.style.display = "block";
 }
 
+
+const clearTimeouts = () => {
+	clearTimeout(typer1)
+	clearTimeout(typer2)
+	clearTimeout(typer3)
+
+}
 // When the user clicks anywhere outside of modal, close it
 window.onclick = function(event) {
 	if (event.target == modal0) {
+		clearTimeouts();
 		modal0.style.display = "none";
+
 	}
+
 	if (event.target == modal1 ) {
+		clearTimeouts();
 		modal1.style.display = "none";
 	}
+
 	if (event.target == modal2 ) {
+		clearTimeouts();
 		modal2.style.display = "none";
 	}
 	if (event.target == modal3 ) {
+		clearTimeouts();
 		modal3.style.display = "none";
 	}
 	if (event.target == modal4 ) {
+		clearTimeouts();
 		modal4.style.display = "none";
 	}
 	if (event.target == modal5 ) {
+		clearTimeouts();
 		modal5.style.display = "none";
 	}
 }
-
-
-
-
-
-
-
 
 
 

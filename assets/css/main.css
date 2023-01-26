@@ -168,7 +168,13 @@ input, select, textarea {
 	}
 
 		a:hover {
-			color: #d64760;
+			color: black;
+			/* box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px; */
+			/* padding: 10px; */
+		}
+
+		.modal-content:hover {
+			box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
 		}
 
 	h1, h2, h3, h4, h5, h6 {
@@ -291,6 +297,7 @@ input, select, textarea {
 		-webkit-transition: -webkit-filter 0.5s ease-in-out;
 		-ms-transition: -ms-filter 0.5s ease-in-out;
 		transition: filter 0.5s ease-in-out;
+		background-color: rgb(254, 207, 215);
 	}
 
 		#wrapper:before {
@@ -929,12 +936,12 @@ input, select, textarea {
 /* Modal Content/Box */
 .modal-content {
   background-color: rgb(148, 148, 243);
+  background-color: rgb(148, 183, 243);
+
   margin: 10% auto; /* 15% from the top and centered */
-  padding: 20px;
+  padding: 10px;
   border: 1px solid #888;
-	color: rgb(98, 207, 98);
-	color:rgba(255, 255, 255, 0.6);
-  width: 60%; /* Could be more or less, depending on screen size */
+  width: 45%; /* Could be more or less, depending on screen size */
 	font-size: 25px;
 	height: auto;
 	display: flex;
@@ -942,6 +949,10 @@ input, select, textarea {
 	box-shadow: 0px 0px 100px rgb(170, 64, 64);
 	animation: fadeIn 2s;
 	cursor: default;
+	border-radius: 7px;
+	padding-top: 15px;
+	padding-bottom: 12px;
+	/* text-decoration: underline; */
 }
 
 @keyframes fadeIn {
@@ -1005,17 +1016,16 @@ input, select, textarea {
 
 }
 
-
 #features li:not(:last-child) {
 	margin-bottom: 15px;
 	/* border: 1px solid gold; */
 
 }
 
-#site-link{
+/* #site-link{
 	margin-top: 35px;
 	text-align: center;
-}
+} */
 
 #bio-title {
 	text-align: center;
@@ -1023,3 +1033,29 @@ input, select, textarea {
 	color: #d64760;
 }
 
+
+.modal-trigger {
+	background-color:transparent; outline:none; border:none; box-shadow:none;
+}
+
+#project-title{
+	font-size:40px;color:rgb(245, 40, 142);text-shadow:rgb(205, 8, 61) .75px -.75px .5px;
+	margin-top: 2035px;
+}
+
+#site {
+	color:rgb(243, 242, 159);font-style:bold;
+}
+
+.typed-text{
+	color: black;
+	text-shadow:rgb(243, 242, 159) .5px -.5px .2px;
+	text-align: left;
+	margin-left: 4%;
+	margin-bottom:10px;
+}
+
+.typed-text b{
+	text-shadow:rgb(159, 195, 243) 2px -.5px .2px;
+
+}
