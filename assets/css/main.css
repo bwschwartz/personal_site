@@ -103,6 +103,11 @@ input, select, textarea {
 	}
 
 
+	@keyframes startSite {
+		from {opacity: 0;}
+		to {opacity: 1}
+	}
+
 	@keyframes animatedBackground {
 		from { background-position: 0 0;
 		}
@@ -313,6 +318,8 @@ input, select, textarea {
 		background-color: transparent;
 		/* background-color: rgb(254, 207, 215); */
 		/* opacity: 90%; */
+		animation: startSite 4s linear;
+
 	}
 
 		#wrapper:before {
