@@ -89,7 +89,7 @@ input, select, textarea {
 		background-image: url("images/overlay.png"), -ms-linear-gradient(top, rgba(0, 0, 0, 0) 75%, rgba(0, 0, 0, 0.65)), url("../../images/bg.jpg");
 		background-image: url("images/overlay.png"), linear-gradient(top, rgba(0, 0, 0, 0) 75%, rgba(0, 0, 0, 0.65)), url("../../images/bg.jpg");
 		background-position: top left, bottom left, auto;
-		background-size: 100% 100%;
+		background-size: auto 100% 100%;
 		background-attachment: fixed;
 		background-repeat: repeat, no-repeat, auto;
 		position: relative;
@@ -99,15 +99,15 @@ input, select, textarea {
 		overflow-y: auto;
 		background-position: 0px 0px;
 		/* background-repeat: repeat; */
-		animation: animatedBackground 4s linear;
+		animation: animatedBackground 40s linear infinite;
 	}
 
 
 	@keyframes animatedBackground {
 		from { background-position: 0 0;
-		opacity: 0;}
+		}
 		to { background-position: 100% 0;
-		opacity: 1}
+		}
 	}
 
 
