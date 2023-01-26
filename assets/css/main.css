@@ -1031,7 +1031,9 @@ input, select, textarea {
 #bio-title {
 	text-align: center;
 	font-size: 40px;
-	color: #d64760;
+	color: #ff90e9;
+	margin-bottom: 10px;
+	text-shadow:rgb(205, 8, 61) .75px -.75px .5px;
 }
 
 
