@@ -299,6 +299,7 @@ input, select, textarea {
 		-ms-transition: -ms-filter 0.5s ease-in-out;
 		transition: filter 0.5s ease-in-out;
 		background-color: rgb(254, 207, 215);
+		/* opacity: 90%; */
 	}
 
 		#wrapper:before {
