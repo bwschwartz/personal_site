@@ -710,13 +710,28 @@ input, select, textarea {
 		display: -moz-flex;
 		display: -webkit-flex;
 		display: -ms-flex;
-		display: flex;
+		display:flex;
 		-moz-justify-content: space-between;
 		-webkit-justify-content: space-between;
 		-ms-justify-content: space-between;
 		justify-content: space-between;
 		position: relative;
+		margin-bottom: 0px;
 		z-index: 10002;
+	animation: appear linear 5s;
+	}
+
+	@keyframes appear {
+		from {
+			/* opacity: 0%; */
+			/* background-color: rgb(240, 179, 231); */
+			margin-bottom: -100px;}
+		to {
+			/* opacity: 100%; */
+			margin-bottom: 0px;
+
+			/* background-color: transparent; */
+}
 	}
 
 
