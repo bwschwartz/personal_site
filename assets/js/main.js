@@ -45,14 +45,12 @@ let sContents = ''; // initialise contents variable
 let iRow; // initialise current row
 
 const disableButtons = () => {
-	console.log("disabled")
 	for (let i=0;i<6; i++) {
 		eval('btn' + i).disabled = true
 	}
 }
 
 const enableButtons = () => {
-	console.log("im enabling")
 	for (let i=0;i<6; i++) {
 		eval('btn' + i).disabled = false
 	}
@@ -70,9 +68,7 @@ const typewriter = (id) =>
 	sContents += aText[iRow++] + '<br /> <br />';
  }
  if (aText[iIndex]) destination.innerHTML = sContents + aText[iIndex].substring(0, iTextPos) + "_";
- if (aText[iIndex].substring(iTextPos-1, iTextPos) === "<" ) {
 
-}
  if ( iTextPos++ == iArrLength ) {
 	iTextPos = 0;
 	iIndex++;
@@ -143,7 +139,7 @@ btn2.onclick = function() {
 	 aText = new Array(
 			"Drag and drop <b>jQuery UI</b> ",
 			"DSP <b>Web Audio API</b>",
-			"Dynamic modular routing",
+			"Modular routing",
 			"Boingy cables <b>Matter.js</b> physics engine"
 		);
 		iSpeed = 50; // time delay of print out
@@ -169,7 +165,6 @@ btn3.onclick = function() {
 
 	 aText = new Array(
 			"Instant messaging <b>WebSockets API</b>",
-			"Channels",
 			"Resizable components",
 			"Scalable image hosting <b>AWS 3</b>"
 
