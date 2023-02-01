@@ -91,7 +91,7 @@ btn0.onclick = function() {
 	 aText = new Array(
 			"Instant messaging <b>WebSockets API</b>",
 			"Scalable image hosting <b>AWS 3</b>",
-			"Cohesive <b>CSS<b> transitions"
+			"Cohesive <b>CSS</b> transitions"
 			);
 			iSpeed = 50; // time delay of print out
 		iIndex = 0; // start printing array at this posision
